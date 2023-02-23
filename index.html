@@ -1,0 +1,30 @@
+<html id ="html">
+<head>
+	<link rel="stylesheet" href ="style.css">
+	<script src="script.js" defer></script>
+	<title>Google Maps Project</title>
+	<link rel="icon" type="image/x-icon" href="icons/favicon.ico"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<script>
+  function initMap(){console.log("Initalized");};  
+</script>
+
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAm0Z8LSGpL0h8meZp9OaUA4yVFi7GekkU&callback=initMap&libraries=places"></script>
+
+<body>
+ 
+<div class="slidecontainer">
+  Range
+  <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+  <div id="anchor">Anchor</div>
+</div>
+  
+ <h1>
+    Go outside! Visit a park!  
+ </h1>
+  
+<div id="map"></div>
+  
+</body>
